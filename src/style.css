@@ -1,0 +1,732 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('proxima-nova.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url('proxima-nova-bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+html,
+body {
+  background-color: #ECE0F2;
+  scroll-behavior: smooth;
+  color: #000000;
+  font-family: "Proxima Nova", "Proxima Nova Bold";
+  font-weight: 700;
+  height: 100vh;
+  margin: 0;
+}
+
+div {
+  color: #000;
+  font-family: "Proxima Nova";
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/*a {
+  color: #FD6958;
+}*/
+
+a:hover {
+  cursor: pointer;
+}
+
+a:focus {
+  outline: none !important;
+}
+
+.highlight { 
+  color: #FD6958;
+}
+
+.highlight-blk { 
+  color: #000000;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.font-text {
+  font-family: "Proxima Nova";
+  font-weight: 700;
+}
+
+.font-text-bold {
+  font-family: "Proxima Nova Bold", sans-serif;
+  font-weight: 800;
+}
+
+.font-text-faq {
+  font-family: "Proxima Nova";
+  font-weight: 300;
+  float: left;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.position-ref {
+  position: relative;
+}
+
+.top-right {
+  position: absolute;
+  right: 10px;
+  top: 18px;
+}
+
+.content {
+  text-align: center;
+}
+
+.title {
+  font-size: 84px;
+}
+
+/*.links>a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}*/
+
+.m-b-md {
+  margin-bottom: 30px;
+}
+
+.top-background {
+  /*background-image: url("src/sheeshmoon-banner.png");*/
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+  /*background-size: 100% 100%;*/
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.bottom-background {
+  /*background-image: url("src/futureImageHere");*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.background-sub-pages {
+  /*background-image: url("src/futureImageHere");*/
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+  /*background-size: 100% 100%;*/
+  /*    background-size: cover;
+      width: 100%;
+      height: auto;*/
+}
+
+/* Style the navbar */
+
+#navbar {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding-top: 4%;
+}
+
+/* Navbar links */
+
+#navbar a {
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 0px;
+  font-size: 1.4rem;
+  font-weight: 800;
+  font-family: "Proxima Nova Bold";
+  text-decoration: none;
+}
+
+/* footer links */
+
+.footer a {
+  display: block;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer {
+  /*max-width: 650px;*/
+  margin: auto 0px 0px 25%;
+  padding: 20px;
+}
+
+@media (max-width: 992px) {
+  .footer {
+    /*max-width: 650px;*/
+    margin: auto 0px 0px 10%;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 663px) {
+  .footer-mobile {
+    /*max-width: 650px;*/
+    display: none;
+  }
+}
+
+@media (max-width: 663px) {
+  .footer {
+    /*max-width: 650px;*/
+    display: none;
+  }
+
+  .footer-logo {
+    width: 250px;
+    height: 40px;
+  }
+}
+
+.footer-header {
+  color: #f2f2f2;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 800;
+  text-align: left;
+}
+
+.footer-header-mobile {
+  color: #f2f2f2;
+  font-size: 18px;
+  font-weight: 800;
+  text-align: center;
+}
+
+/* footer links */
+
+.footer-mobile a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-container {
+  /*max-width: 850px;*/
+  margin: auto;
+}
+
+/* Page content */
+
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+
+.sticky {
+  position: fixed;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.how-to-buy {
+  background-color: #FFF;
+  border-color: #FFF;
+  border-radius: 15px;
+  width: 150px;
+  height: 40px;
+  font-size: 16px;
+}
+
+.how-to-buy a {
+  padding: 5px !important;
+}
+
+.navbar-padding-15 {
+  padding: 15px 0px;
+}
+
+.padding-15 {
+  padding: 15px;
+}
+
+.padding-25 {
+  padding: 25px;
+}
+
+.padding-top-70 {
+  padding-top: 60px;
+}
+
+.width-80 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social {
+  background-color: #FD6958;
+  height: 40px;
+  --bs-gutter-x: 0rem;
+}
+
+.social-bottom {
+  margin: 10px;
+}
+
+.center-items {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-main {
+  font-size: 3rem;
+  color: #000;
+}
+
+.header-main-sm {
+  font-size: 1.6rem;
+  color: #000;
+}
+
+.sub-header-main {
+  font-size: 40px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.sub-header-main-sm {
+  font-size: 22px;
+  color: #000;
+  font-weight: 100;
+  margin-top: 10px;
+}
+
+.social-navbar-sm {
+  font-size: 1.1rem;
+  color: #000;
+  font-weight: 100;
+  margin-top: 0px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+
+.social-navbar-main {
+  font-size: 0.85rem;
+  color: #000;
+  margin-bottom: 0px;
+}
+
+.social-navbar {
+  float: right;
+  margin: 5px 10px 5px 10px;
+}
+
+.social-left {
+  margin-left: 15%;
+  max-width: 50%;
+  width: 50%;
+}
+
+.social-right {
+  max-width: 25%;
+  width: 25%;
+}
+
+.sub-header-main-blocks {
+  font-size: 32px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.sub-header-main-blocks-sm {
+  font-size: 22px;
+  color: #000;
+  font-weight: 100;
+  margin-top: 10px;
+}
+
+.contact-address {
+  font-size: 28px;
+  color: #000;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.clipboard-copy-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.bottom-gradient-main {
+  height: 200px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,0b001e+100&0+0,0.4+25,0.6+45,0.75+60,0.85+75,1+90 */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(3, 0, 8, 0.4) 25%, rgba(5, 0, 14, 0.6) 45%, rgba(7, 0, 18, 0.75) 60%, rgba(9, 0, 23, 0.85) 75%, #0a001b 90%, #0b001e 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00000000", endColorstr="#0b001e",GradientType=0 );
+  /* IE6-9 */
+}
+
+.top-gradient-main {
+  height: 200px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0b001e+0,000000+100&1+10,0.85+25,0.75+40,0.6+55,0.4+75,0+100 */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #0b001e 0%, #0a001b 10%, rgba(8, 0, 23, 0.85) 25%, rgba(6, 0, 18, 0.75) 40%, rgba(5, 0, 14, 0.6) 55%, rgba(3, 0, 8, 0.4) 75%, rgba(0, 0, 0, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#0b001e", endColorstr="#00000000",GradientType=0 );
+  /* IE6-9 */
+}
+
+.main-page-buttons {
+  height: 50px;
+  width: 250px;
+  font-size: 20px;
+}
+
+.main-page-buttons a {
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.faq-row {
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq-expand-btn {
+  float: right;
+  background-color: #0b001e;
+  border: none;
+  box-shadow: none;
+}
+
+.faq-answer {
+  background-color: #DEDFE0;
+  color: #000;
+  font-size: 22px;
+  text-align: left;
+}
+
+.disclaimer-expand-btn {
+  background-color: #0b001e;
+  border: none;
+  box-shadow: none;
+}
+
+.hide-icon-faq {
+  display: none;
+}
+
+.contract-address {
+  font-size: 32px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.how-to-buy-text {
+  color: #000;
+  font-size: 32px;
+  margin: 0;
+}
+
+.how-to-buy-img {
+  margin: auto 10px auto 0;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: flex;
+}
+
+.header-icon {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Team page */
+
+.profile-img {
+  background-image: var(--url);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  width: 235px;
+  height: 375px;
+  margin: 20px auto 20px auto;
+}
+
+.profile-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #000;
+  font-weight: 500;
+  font-family: "Proxima Nova";
+  font-size: 18px;
+}
+
+.profile-hr {
+  position: absolute;
+  bottom: 11%;
+  border: 1px solid #DEDFE0;
+  width: 175px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.team-img-area {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: 1px solid transparent;
+  /*You just need this if you are only concerned with android and not desktop browsers.*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* Whitepaper page */
+
+.whitepaper-header {
+  font-family: "Proxima Nova Bold";
+  font-weight: 800;
+  color: #000;
+}
+
+.whitepaper-text {
+  font-family: "Proxima Nova";
+  font-weight: 500;
+  color: #000;
+}
+
+.whitepaper-overview {
+  font-size: 18px;
+}
+
+.whitepaper-tokenomics {
+  font-size: 24px;
+}
+
+/*  Jobs Page */
+
+.job-img {
+  background-image: var(--url);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  width: 300px;
+  height: 425px;
+  margin: 20px auto 20px auto;
+}
+
+.job-title {
+  position: absolute;
+  top: 24%;
+  left: 0;
+  right: 0;
+  color: #000;
+  font-weight: 800;
+  font-family: "Proxima Nova Bold";
+  font-size: 1.2rem;
+  width: 80%;
+  margin: auto;
+}
+
+.job-text {
+  position: absolute;
+  top: 38%;
+  left: 0;
+  right: 0;
+  color: #000;
+  font-weight: 500;
+  font-family: "Proxima Nova";
+  font-size: 0.85rem;
+  width: 80%;
+  margin: auto;
+  text-align: left;
+}
+
+.job-btn {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  background-color: #DEDFE0;
+  border-color: #DEDFE0;
+  border-radius: 10px;
+  width: 175px;
+  height: 40px;
+  margin: auto;
+}
+
+.job-btn a {
+  color: #000;
+  font-weight: 800;
+  font-family: "Proxima Nova Bold";
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.stats-red {
+  color: red;
+}
+
+.stats-green {
+  color: green;
+}
+
+.stats-font {
+  font-size: 1.4rem;
+}
+
+@media (min-width: 1200px) {
+  .team-gutter-x {
+    --bs-gutter-x: -12rem;
+  }
+
+  .how-to-buy-container {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 575px) {
+  body {
+    font-size: 22px;
+  }
+
+  #navbar a {
+    font-size: 1.2rem;
+  }
+
+  .header-main {
+    font-size: 2.8rem;
+  }
+
+  .whitepaper-overview {
+    margin: 20px;
+  }
+
+  .whitepaper-tokenomics {
+    font-size: 16px;
+    padding-right: 20px;
+  }
+
+  .header-main-sm {
+    font-size: 1.6rem;
+  }
+
+  .header-icon {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bottom-gradient-main {
+    height: 0px;
+  }
+
+  .top-gradient-main {
+    height: 0px;
+  }
+
+  .sub-header-main-blocks {
+    font-size: 28px;
+  }
+
+  .faq-answer {
+    font-size: 16px;
+  }
+
+  .sub-header-main-blocks-sm {
+    font-size: 16px;
+  }
+
+  .contract-address {
+    font-size: 14px;
+  }
+
+  .how-to-buy-text {
+    font-size: 22px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .header-icon {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*override default bootstrap css*/
+
+.navbar-toggler:focus {
+  outline: none;
+  border: none;
+}
+
